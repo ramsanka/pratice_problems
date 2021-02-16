@@ -24,7 +24,7 @@ void find_patt(char txt[], char pat[]) {
       t = (d * t + txt[j])%q;
    }
 
-   int u = 0;
+   int u;
    //sliding function
    for (int i = 0; i <= N-M; i++) {
         if ( p == t) 
@@ -42,7 +42,7 @@ void find_patt(char txt[], char pat[]) {
    	if ( i < N-M) 
    	{  
 
-      		t = (d *(t - pat[i]*h) + txt[i+M])%q;
+      		t = (d *(t-pat[i]*h) + txt[i+M])%q;
       		if (t<0) 
         		t = (t + q);
    	}
@@ -58,7 +58,7 @@ void find_patt(char txt[], char pat[]) {
 int main() {
 
     char input[] = "AAAACCC";
-    char patt[]  = "CCC";
+    char patt[]  = "AAA";
 
     find_patt(input, patt);
 
