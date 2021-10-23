@@ -1,6 +1,7 @@
 //fibo numbers
 //thus is bottom up approach
 //where the table is built up.
+//Fibonacci numbers
 #include <bits/stdc++.h>
 #include <stdio.h>
 
